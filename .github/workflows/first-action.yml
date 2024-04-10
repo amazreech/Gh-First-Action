@@ -1,0 +1,18 @@
+# name of the workflow
+name: First Workflow
+
+# Defining when the workflow should run, workflow_dispacth refers to manual action
+on: workflow_dispatch
+
+# Now we want to define what action needs to be done
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
+        
+        
+    
